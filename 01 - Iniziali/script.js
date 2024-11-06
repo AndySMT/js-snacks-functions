@@ -2,12 +2,15 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
-
 // Dichiara la funzione qui.
-
-
+function firstChar(nameList) {
+  let newArray = [];
+  for (let i = 0; i <= names.length - 1; i++) {
+    newArray.push(names[i].charAt(0));
+  }
+  return newArray;
+}
 // Invoca la funzione qui e stampa il risultato in console
-
-
-
+let iniziali = firstChar(names);
+console.log(iniziali);
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
