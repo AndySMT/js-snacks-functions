@@ -18,6 +18,8 @@ let specific = specificChar(names, "A");
 console.log(specific);
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
 
+/* ArrowFunction */
+
 let specificCharArrow = (nameList, character) => {
   let firstChar = [];
   for (let i = 0; i <= nameList.length - 1; i++) {
