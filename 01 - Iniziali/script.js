@@ -14,3 +14,14 @@ function firstChar(nameList) {
 let iniziali = firstChar(names);
 console.log(iniziali);
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
+
+/* ArrowFunction */
+
+let firstCharArrow = (nameList) => {
+  let newArray = [];
+  for (let i = 0; i <= names.length - 1; i++) {
+    newArray.push(names[i].charAt(0));
+  }
+  return newArray;
+};
+console.log(firstCharArrow(names));
